@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leopard@^1/dist/index.min.css"
+    />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+        <h1>App do Calculão</h1>
+    </header>
+    <main>
+        <div class="app">
+            <div class="btns">
+                <button id="greenFlag"><i data-feather="play"></i></button>
+            </div>
+            <div
+            id="project"
+            ></div>
+        </div>
+
+        <p>Na operação desejada, insira o número correspondente <i data-feather="info"></i></p>
+
+        <div class="infos">
+            <h2>Opções</h2>
+            <div class="opcoes">
+                <span class="op">1: Adição</span>
+                <span class="op">2: Subtração</span>
+                <span class="op">3: Multiplicação</span>
+                <span class="op">4: Divisão</span>
+                <span class="op">5: Raíz quadrada</span>
+                <span class="op">6: Logarítmo</span>
+                <span class="op">7: Potência de 10</span>
+                <span class="op">8: Seno</span>
+                <span class="op">9: Cosseno</span>
+                <span class="op">10: Tangente</span>
+                <span class="op">11: Arqseno</span>
+                <span class="op">12: Arqcosseno</span>
+                <span class="op">13: Arqtangente</span>
+            </div>
+        </div>
+        
+    </main>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+      feather.replace();
+    </script>
+    <script type="module">
+      import project from "./index.js";
+
+      project.attach("#project");
+
+      document.querySelector("#greenFlag").addEventListener("click", () => {
+        project.greenFlag();
+      });
+
+      // Autoplay
+      project.greenFlag();
+    </script>
+  </body>
+</html>

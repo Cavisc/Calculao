@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: purple;
+}
+
+header {
+    background: rgb(78, 0, 78);
+    color: #dadada;
+    font-family: 'Press Start 2P', cursive;
+    padding: 1.5rem 2rem;
+    text-align: center;
+}
+
+main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: 85vh;
+    justify-content: center;
+}
+
+.app {
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+canvas {
+    background: purple;
+    border: 3px solid cornflowerblue;
+    border-radius: 20px;
+}
+
+.btns {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column-reverse;
+}
+
+#greenFlag {
+    background: rgb(20, 220, 37);
+    border: none;
+    border-radius: 100%;
+    color: pink;
+    cursor: pointer;
+    height: 70px;
+    outline: none;
+    padding: 1rem;
+    text-align: center;
+    transition: .3s;
+    width: 70px;
+}
+
+#greenFlag:hover {
+    background: pink;
+    color: rgb(20, 220, 37);
+    transform: scale(1.1);
+}
+
+p {
+    color: gray;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+    gap: 10px;
+}
+
+.infos {
+    text-align: center;
+}
+
+.infos > h2 {
+    color: #dadada;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1rem;
+}
+
+.opcoes {
+    background: cornflowerblue;
+    border-radius: 20px;
+    display: grid;
+    font-family: 'Poppins', sans-serif;
+    gap: .8rem .5rem;
+    grid-template-columns: repeat(5, 23%);
+    grid-template-rows: repeat(3, 33.33%);
+    justify-content: center;
+    padding: 2rem 5rem;
+}
+
+.op {
+    color: #dadada;
+    font-weight: bold;
+}
